@@ -30,7 +30,7 @@ const Create = () => {
     data.set("content", content);
     data.set("file", files[0]);
 
-    const response = await fetch("mern-blog-api-bay.vercel.app/post", {
+    const response = await fetch("https://mern-blog-api-bay.vercel.app/post", {
       method: "POST",
       body: data,
       credentials: "include",
