@@ -8,7 +8,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const register = async (e) => {
     e.preventDefault();
-    const response = await fetch("mern-blog-api-bay.vercel.app/register", {
+    const response = await fetch("https://mern-blog-api-bay.vercel.app/register", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },
