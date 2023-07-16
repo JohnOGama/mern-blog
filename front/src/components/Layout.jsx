@@ -6,7 +6,7 @@ const Layout = () => {
   const navigate = useNavigate();
   const { setUserInfo, userInfo } = useContext(UserContext);
   useEffect(() => {
-    fetch("http://localhost:4000/profile", {
+    fetch("mern-blog-api-bay.vercel.app/profile", {
       credentials: "include",
     })
       .then((response) => response.json())
@@ -16,7 +16,7 @@ const Layout = () => {
   }, []);
 
   const logout = async () => {
-    const response = await fetch("http://localhost:4000/logout", {
+    const response = await fetch("mern-blog-api-bay.vercel.app/logout", {
       credentials: "include",
       method: "POST",
     });
