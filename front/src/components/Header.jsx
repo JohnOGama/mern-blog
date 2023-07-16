@@ -5,7 +5,7 @@ import { UserContext } from "../UserContext";
 const Header = () => {
   const { setUserInfo, userInfo } = useContext(UserContext);
   useEffect(() => {
-    fetch("mern-blog-api-bay.vercel.app/profile", {
+    fetch("https://mern-blog-api-bay.vercel.app/profile", {
       credentials: "include",
     })
       .then((response) => response.json())
