@@ -5,7 +5,7 @@ import Post from "../components/Post";
 const Hero = () => {
   const [post, setPost] = useState([]);
   useEffect(() => {
-    fetch("mern-blog-api-bay.vercel.app/post").then((response) => {
+    fetch("https://mern-blog-api-bay.vercel.app/post").then((response) => {
       response.json().then((posts) => {
         setPost(posts);
       });
