@@ -14,11 +14,7 @@ const app = express();
 const salt = bcrypt.genSaltSync(10);
 const secret = "oasdfjasoifdjlaksjdflkasdf";
 
-app.use(
-  cors({
-    credentials: true,
-    origin: "https://mern-blog-755d.vercel.app"
-  })
+app.use()
 );
 app.use(express.json());
 app.use(cookieParser());
