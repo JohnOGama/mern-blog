@@ -10,7 +10,7 @@ const ViewPage = () => {
 
   const { userInfo } = useContext(UserContext);
   useEffect(() => {
-    fetch(`http://localhost:4000/post/${id}`).then((response) =>
+    fetch(`mern-blog-api-bay.vercel.app/post/${id}`).then((response) =>
       response.json().then((postInfo) => setPostPage(postInfo))
     );
   }, []);
@@ -20,7 +20,7 @@ const ViewPage = () => {
     <div className="w-full bg-[#FFFFFF] pb-10">
       <div className="max-w-[1000px] mx-auto flex flex-col text-sm md:text-xl">
         <img
-          src={`http://localhost:4000/${postPage.cover}`}
+          src={`mern-blog-api-bay.vercel.app/${postPage.cover}`}
           alt=""
           className="mt-4"
         />
