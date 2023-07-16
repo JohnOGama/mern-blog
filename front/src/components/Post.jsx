@@ -28,7 +28,7 @@ const Post = ({ _id, cover, author, title, summary, createdAt, content }) => {
     <div className="">
       <div className=" px-4 pt-4 md:flex  md:h-auto ">
         <img
-          src={"http://localhost:4000/" + cover}
+          src={"mern-blog-api-bay.vercel.app/" + cover}
           className="w-full md:w-[350px] md:h-[250px] lg:w-[250px] object-cover  "
         />
 
